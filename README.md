@@ -33,7 +33,6 @@ data/public/
       Stroop_features_WD_CI.csv Full anonymized WD cognitive-impairment feature table
       Stroop_features_WD_CN.csv Full anonymized WD cognitively normal feature table
     WD_participant_info.xlsx    English WD information table for the 33 public WD samples
-    WD_participant_info.csv     CSV copy of the same WD information table
 
 results/
   Stroop_TaskLevel_NewFeatures.csv  Full anonymized task-level result table
