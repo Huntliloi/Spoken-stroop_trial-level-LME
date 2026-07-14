@@ -1,0 +1,2 @@
+﻿Comparison,Base_Task,Contrast_Task,N_Features_Tested,Utterance_Significant_Raw_Count,Utterance_Significant_FDR_Count,Trial_Significant_Raw_Count,Trial_Significant_FDR_Count,FDR_Method,Alpha
+STT_vs_Hanzi,Hanzi,STT,90,29,17,35,32,Benjamini-Hochberg,0.05
