@@ -1,2 +1,0 @@
-﻿Comparison,Base_Task,Contrast_Task,N_Features_Tested,Utterance_Significant_Raw_Count,Utterance_Significant_FDR_Count,Trial_Significant_Raw_Count,Trial_Significant_FDR_Count,FDR_Method,Alpha
-STT_vs_Dots,Dots,STT,90,16,4,32,20,Benjamini-Hochberg,0.05
