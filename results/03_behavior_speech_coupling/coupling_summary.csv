@@ -1,4 +1,0 @@
-﻿Pair,Task_1,Task_2,N_Subjects,N_Speech_Features,N_Behavior_Metrics,N_Tests,Raw_Significant_Count,FDR_Significant_Count,FDR_Method,Alpha
-STT_minus_Dots,STT,Dots,158,90,2,180,59,41,Benjamini-Hochberg,0.05
-STT_minus_Hanzi,STT,Hanzi,158,90,2,180,74,61,Benjamini-Hochberg,0.05
-Dots_minus_Hanzi,Dots,Hanzi,158,90,2,180,33,13,Benjamini-Hochberg,0.05
