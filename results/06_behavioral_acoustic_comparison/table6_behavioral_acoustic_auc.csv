@@ -1,0 +1,3 @@
+Outcome,Behavioral_Model_AUC_95CI,Acoustic_Model_AUC_95CI,Combined_Model_AUC_95CI
+WD-CI vs WD-CN,0.772 (0.629-0.914),0.745 (0.555-0.934),0.817 (0.678-0.956)
+MoCA-CI vs MoCA-CN (overall substance-use cohort),0.662 (0.516-0.808),0.763 (0.634-0.891),0.703 (0.564-0.842)
