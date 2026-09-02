@@ -1,0 +1,27 @@
+Task-specific test-retest reliability
+
+Input feature table: data/public/device_repeatability/Stroop_features_device_repeatability.csv
+Primary feature-selection table: results/04_wd_external_validation/LME_deviation_scores_CW_vs_W_WD_CI_FDR01/healthy_LME_model_summary_CW_vs_W_WD_CI_FDR01.csv
+Selected acoustic features: 32 (original CW-vs-W Age x Task effects with FDR-adjusted p <= .05)
+Bootstrap replicates per ICC: 2000
+
+All reliability analyses are performed separately within each device. No values are pooled across devices.
+
+Traditional metric definitions
+1. Task accuracy is the number of correctly paired recognized color words divided by 12. Missing responses count as incorrect.
+2. Task card completion time is the end time of the 12th paired response relative to audio onset. It is missing when fewer than 12 paired responses are available.
+3. Three-condition overall accuracy is total correct across C, W, and CW divided by 36.
+4. Three-condition total completion time is the sum of the three card completion times and is missing unless all three are available. Its ICC equals the ICC of their mean because the two scores differ only by a constant factor.
+5. Accuracy interference is W accuracy minus CW accuracy.
+6. Completion-time interference is CW completion time minus W completion time.
+7. Missing completion times are not imputed for reliability analysis; ICC uses complete session pairs.
+
+Acoustic metric definitions
+1. Overall_All_Conditions averages all available C, W, and CW item-level observations within participant, device, and session.
+2. C, W, and CW average available item-level observations within the corresponding condition.
+3. The CW-versus-W measure is not computed by directly subtracting condition means. For each device, session, and feature, all available W and CW items are fitted with Feature_Z ~ Age_Z * Task_Code + (1 + Task_Code | Participant_ID), where W = -0.5 and CW = +0.5.
+4. The model-implied individual task slope equals the fixed Task effect plus the fixed Age x Task component at that participant's age plus the empirical-Bayes random Task slope. ICC compares these model-implied slopes across sessions.
+5. Only the 32 prespecified significant features are analyzed; the remaining 58 features are not tested.
+
+Reliability model
+ICC(3,1), two-way mixed-effects consistency, single measurement, for session_1 versus session_2 within the same device. Bootstrap confidence intervals resample participants as paired observations.
