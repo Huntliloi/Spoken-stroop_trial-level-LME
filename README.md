@@ -46,7 +46,6 @@ scripts/
   06_external_validation/
   07_visualization/
 
-outputs/                            Locally generated files; ignored by git
 ```
 
 ## Anonymous IDs
